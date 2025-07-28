@@ -13,11 +13,11 @@
     transition: all 0.3s ease;
     cursor: pointer;
     border-radius: 4px;
-    padding: 1px 2px; /* Reducido para ajustar mejor */
+    padding: 1px 2px;
     margin: 0;
     display: inline;
     position: relative;
-    white-space: nowrap; /* Evita saltos de línea dentro de la palabra */
+    white-space: nowrap;
 }
 
 .word:hover {
@@ -26,189 +26,186 @@
 
 .known {
     background-color: #bbf7d0;
-    padding: 2px 4px; /* Solo para palabras conocidas */
+    padding: 2px 4px;
 }
 
 .forgotten {
     background-color: #fed7aa;
-    padding: 2px 4px; /* Solo para palabras olvidadas */
+    padding: 2px 4px;
 }
 
-/* ✅ BOTONES SIEMPRE VISIBLES PARA MÓVIL */
 .word-actions {
     display: inline-flex;
-    gap: 2px; /* Reducido */
-    margin-left: 4px; /* Reducido */
-    opacity: 1; /* Siempre visibles */
+    gap: 2px;
+    margin-left: 4px;
+    opacity: 1;
     transition: opacity 0.2s ease;
     vertical-align: middle;
 }
 
 .word-actions button {
-    padding: 2px 4px; /* Más pequeños */
-    font-size: 0.8rem; /* Más pequeños */
+    padding: 2px 4px;
+    font-size: 0.8rem;
     border-radius: 3px;
     border: 1px solid transparent;
     transition: all 0.2s ease;
-    min-width: 24px; /* Más pequeños */
-    height: 24px; /* Más pequeños */
+    min-width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-        .text-display {
+
+.text-display {
     line-height: 2.1;
     font-size: 1.1rem;
 }
-        .word-actions button:hover {
-            transform: scale(1.1);
-        }
-        
-        /* Botón de pronunciación */
-        .speech-btn {
-            background-color: #dbeafe;
-            color: #1e40af;
-            border-color: #93c5fd;
-        }
-        
-        .speech-btn:hover {
-            background-color: #bfdbfe;
-            border-color: #60a5fa;
-        }
-        
-        /* Botón de conocido */
-        .mark-known-btn {
-            background-color: #dcfce7;
-            color: #166534;
-            border-color: #86efac;
-        }
-        
-        .mark-known-btn:hover {
-            background-color: #bbf7d0;
-            border-color: #4ade80;
-        }
-        
-        /* Botón de olvidado */
-        .mark-forgotten-btn {
-            background-color: #fed7aa;
-            color: #c2410c;
-            border-color: #fdba74;
-        }
-        
-        .mark-forgotten-btn:hover {
-            background-color: #fb923c;
-            border-color: #f97316;
-        }
 
-        #textInput {
-            min-height: 150px;
-        }
-        
-        /* Login Styles */
-        .login-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-        .login-box {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* ✅ ESTILOS PARA PRACTICE WORDS */
-        #practiceWords {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
-            width: 100%;
-        }
+.word-actions button:hover {
+    transform: scale(1.1);
+}
 
-        .practice-word-card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            border: 2px solid #e5e7eb;
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-            transition: all 0.3s ease;
-        }
+.speech-btn {
+    background-color: #dbeafe;
+    color: #1e40af;
+    border-color: #93c5fd;
+}
 
-        .practice-word-card:hover {
-            border-color: #6366f1;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
-        }
+.speech-btn:hover {
+    background-color: #bfdbfe;
+    border-color: #60a5fa;
+}
 
-        .word-original {
-            font-weight: bold;
-            font-size: 1.25rem;
-            color: #1f2937;
-            text-align: center;
-        }
+.mark-known-btn {
+    background-color: #dcfce7;
+    color: #166534;
+    border-color: #86efac;
+}
 
-        .word-translation {
-            font-style: italic;
-            color: #6b7280;
-            font-size: 1rem;
-            text-align: center;
-            border-top: 1px solid #e5e7eb;
-            padding-top: 0.5rem;
-        }
+.mark-known-btn:hover {
+    background-color: #bbf7d0;
+    border-color: #4ade80;
+}
 
-        .practice-card-actions {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: auto;
-            justify-content: center;
-        }
+.mark-forgotten-btn {
+    background-color: #fed7aa;
+    color: #c2410c;
+    border-color: #fdba74;
+}
 
-        .practice-card-actions button {
-            padding: 0.5rem;
-            border-radius: 8px;
-            border: 1px solid transparent;
-            transition: all 0.2s ease;
-            font-size: 0.875rem;
-        }
+.mark-forgotten-btn:hover {
+    background-color: #fb923c;
+    border-color: #f97316;
+}
 
-        .speak-practice-btn {
-            background: #dbeafe;
-            color: #1e40af;
-        }
+#textInput {
+    min-height: 150px;
+}
 
-        .speak-practice-btn:hover {
-            background: #bfdbfe;
-        }
+.login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-        .mark-practice-known-btn {
-            background: #dcfce7;
-            color: #166534;
-        }
+.login-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .mark-practice-known-btn:hover {
-            background: #bbf7d0;
-        }
+#practiceWords {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
 
-        .loading-card {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6b7280;
-            font-style: italic;
-        }
+.practice-word-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 2px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.practice-word-card:hover {
+    border-color: #6366f1;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.word-original {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #1f2937;
+    text-align: center;
+}
+
+.word-translation {
+    font-style: italic;
+    color: #6b7280;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 0.5rem;
+}
+
+.practice-card-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+    justify-content: center;
+}
+
+.practice-card-actions button {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+}
+
+.speak-practice-btn {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.speak-practice-btn:hover {
+    background: #bfdbfe;
+}
+
+.mark-practice-known-btn {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.mark-practice-known-btn:hover {
+    background: #bbf7d0;
+}
+
+.loading-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    font-style: italic;
+}
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
@@ -233,7 +230,7 @@
         </div>
     </div>
 
-    <div class="container mx-auto px-4 py-8" style="display: none;">
+    <div id="mainApp" class="container mx-auto px-4 py-8" style="display: none;">
         <header class="mb-10 text-center">
             <h1 class="text-4xl font-bold text-indigo-700 mb-2">English Learning Control</h1>
             <p class="text-lg text-gray-600">Track your English vocabulary progress and practice effectively</p>
@@ -270,7 +267,7 @@
                     </div>
                 </section>
 
-                <!-- ✅ Section 3: Text Viewer - SIN BOTONES DE CONTROL GLOBALES -->
+                <!-- Section 3: Text Viewer -->
                 <section id="textViewerSection" class="bg-white rounded-xl shadow-md p-6 hidden">
                     <div class="flex justify-between items-center mb-4">
                         <h2 id="currentTextTitle" class="text-2xl font-semibold text-gray-800"></h2>
@@ -281,7 +278,6 @@
                     <div class="bg-gray-50 p-4 rounded-lg mb-4">
                         <div id="textDisplay" class="text-display"></div>
                     </div>
-                    <!-- ✅ ELIMINADOS LOS BOTONES GLOBALES -->
                     <div id="translationResult" class="hidden bg-gray-100 p-3 rounded-lg"></div>
                 </section>
             </div>
@@ -383,10 +379,23 @@
     </div>
 
     <script>
-        // Conectar a Supabase
-        const SUPABASE_URL = 'https://cxtresumeeybaksjtaqs.supabase.co';
-        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN4dHJlc3VtZWV5YmFrc2p0YXFzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMwMzE5ODgsImV4cCI6MjA2ODYwNzk4OH0.oo1l7GeAJQOGzM9nMgzFYrxwKNIU9x0B0RJlx7ShSOM';
-        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+        // ========== CONFIGURACIÓN SUPABASE ==========
+        let supabase;
+        
+        // Intentar inicializar Supabase
+        try {
+            const SUPABASE_URL = 'https://cxtresumeeybaksjtaqs.supabase.co';
+            const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN4dHJlc3VtZWV5YmFrc2p0YXFzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMwMzE5ODgsImV4cCI6MjA2ODYwNzk4OH0.oo1l7GeAJQOGzM9nMgzFYrxwKNIU9x0B0RJlx7ShSOM';
+            
+            if (window.supabase && window.supabase.createClient) {
+                supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+                console.log('Supabase inicializado correctamente');
+            } else {
+                throw new Error('Supabase library not loaded');
+            }
+        } catch (error) {
+            console.error('Error inicializando Supabase:', error);
+        }
 
         // ========== VARIABLES GLOBALES ==========
         const users = {
@@ -402,85 +411,90 @@
         let currentPracticeWords = [];
 
         // ========== ELEMENTOS DEL DOM ==========
-        const usernameInput = document.getElementById('username');
-        const passwordInput = document.getElementById('password');
-        const loginBtn = document.getElementById('loginBtn');
-        const loginError = document.getElementById('loginError');
-        const loginContainer = document.getElementById('loginContainer');
-        const appContainer = document.querySelector('.container');
-        const saveTextBtn = document.getElementById('saveTextBtn');
-        const textNameInput = document.getElementById('textName');
-        const textInput = document.getElementById('textInput');
-        const savedTextsList = document.getElementById('savedTextsList');
-        const textViewerSection = document.getElementById('textViewerSection');
-        const currentTextTitle = document.getElementById('currentTextTitle');
-        const textDisplay = document.getElementById('textDisplay');
-        const closeTextViewer = document.getElementById('closeTextViewer');
-        const translationResult = document.getElementById('translationResult');
-        const knownCount = document.getElementById('knownCount');
-        const forgottenCount = document.getElementById('forgottenCount');
-        const totalCount = document.getElementById('totalCount');
-        const textsCount = document.getElementById('textsCount');
-        const progressBar = document.getElementById('progressBar');
-        const progressPercentage = document.getElementById('progressPercentage');
-        const wordInventoryTable = document.getElementById('wordInventory');
-        const searchWord = document.getElementById('searchWord');
-        const searchBtn = document.getElementById('searchBtn');
-        const wordCount = document.getElementById('wordCount');
-        const generatePracticeBtn = document.getElementById('generatePracticeBtn');
-        const practiceList = document.getElementById('practiceList');
-        const practiceWords = document.getElementById('practiceWords');
-        const markAllKnown = document.getElementById('markAllKnown');
-        const shufflePractice = document.getElementById('shufflePractice');
-        const playPracticeLoop = document.getElementById('playPracticeLoop');
+        let usernameInput, passwordInput, loginBtn, loginError, loginContainer, mainApp;
+        let saveTextBtn, textNameInput, textInput, savedTextsList, textViewerSection;
+        let currentTextTitle, textDisplay, closeTextViewer, translationResult;
+        let knownCount, forgottenCount, totalCount, textsCount, progressBar, progressPercentage;
+        let wordInventoryTable, searchWord, searchBtn, wordCount, generatePracticeBtn;
+        let practiceList, practiceWords, markAllKnown, shufflePractice, playPracticeLoop;
 
-        // ========== FUNCIONES PRINCIPALES ==========
+        // ========== FUNCIÓN DE INICIALIZACIÓN DOM ==========
+        function initializeDOMElements() {
+            // Login elements
+            usernameInput = document.getElementById('username');
+            passwordInput = document.getElementById('password');
+            loginBtn = document.getElementById('loginBtn');
+            loginError = document.getElementById('loginError');
+            loginContainer = document.getElementById('loginContainer');
+            mainApp = document.getElementById('mainApp');
+            
+            // Text management elements
+            saveTextBtn = document.getElementById('saveTextBtn');
+            textNameInput = document.getElementById('textName');
+            textInput = document.getElementById('textInput');
+            savedTextsList = document.getElementById('savedTextsList');
+            textViewerSection = document.getElementById('textViewerSection');
+            currentTextTitle = document.getElementById('currentTextTitle');
+            textDisplay = document.getElementById('textDisplay');
+            closeTextViewer = document.getElementById('closeTextViewer');
+            translationResult = document.getElementById('translationResult');
+            
+            // Stats elements
+            knownCount = document.getElementById('knownCount');
+            forgottenCount = document.getElementById('forgottenCount');
+            totalCount = document.getElementById('totalCount');
+            textsCount = document.getElementById('textsCount');
+            progressBar = document.getElementById('progressBar');
+            progressPercentage = document.getElementById('progressPercentage');
+            
+            // Inventory elements
+            wordInventoryTable = document.getElementById('wordInventory');
+            searchWord = document.getElementById('searchWord');
+            searchBtn = document.getElementById('searchBtn');
+            
+            // Practice elements
+            wordCount = document.getElementById('wordCount');
+            generatePracticeBtn = document.getElementById('generatePracticeBtn');
+            practiceList = document.getElementById('practiceList');
+            practiceWords = document.getElementById('practiceWords');
+            markAllKnown = document.getElementById('markAllKnown');
+            shufflePractice = document.getElementById('shufflePractice');
+            playPracticeLoop = document.getElementById('playPracticeLoop');
+            
+            console.log('DOM elements initialized');
+        }
+
+        // ========== FUNCIONES DE LOGIN ==========
         function initLogin() {
-            if (!loginBtn || !passwordInput || !loginContainer || !appContainer) {
+            if (!loginBtn || !passwordInput || !loginContainer || !mainApp) {
                 console.error("Error: Elementos críticos del login no encontrados");
                 return;
             }
+            
             loginBtn.addEventListener('click', handleLogin);
             passwordInput.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') handleLogin();
             });
-        }
-
-        function initApp() {
-            renderSavedTexts();
-            updateStats();
-            renderWordInventory();
             
-            saveTextBtn.addEventListener('click', saveText);
-            closeTextViewer.addEventListener('click', closeText);
-            searchBtn.addEventListener('click', searchWords);
-            
-            // Eventos de práctica
-            generatePracticeBtn.addEventListener('click', generatePracticeList);
-            markAllKnown.addEventListener('click', markAllPracticeWordsAsKnown);
-            shufflePractice.addEventListener('click', shufflePracticeWords);
-            playPracticeLoop.addEventListener('click', playAllPracticeWords);
-            
-            if ('speechSynthesis' in window) {
-                window.speechSynthesis.onvoiceschanged = function() {
-                    // Voces cargadas
-                };
-            }
+            console.log('Login initialized');
         }
 
         async function handleLogin() {
             const username = usernameInput.value.trim();
             const password = passwordInput.value;
 
+            console.log('Attempting login for:', username);
+
             if (users[username] && users[username] === password) {
                 currentUser = username;
+                console.log('Login successful for:', currentUser);
+                
                 loginContainer.style.display = 'none';
-                appContainer.style.display = 'block';
+                mainApp.style.display = 'block';
 
-                await renderSavedTexts();
-                await updateStats();
-                initApp();
+                await initApp();
             } else {
+                console.log('Login failed - invalid credentials');
                 loginError.classList.remove('hidden');
                 setTimeout(() => {
                     loginError.classList.add('hidden');
@@ -488,66 +502,1207 @@
             }
         }
 
-        // ✅ FUNCIÓN DE TRADUCCIÓN
-        async function translateWordToSpanish(word) {
-            if (!word || word.trim() === '') return '';
-
-            const cacheKey = `translation_${word.toLowerCase()}`;
-            const cached = localStorage.getItem(cacheKey);
-            if (cached) return cached;
-
+        // ========== FUNCIONES DE APLICACIÓN ==========
+        async function initApp() {
+            console.log('Initializing app for user:', currentUser);
+            
             try {
-                const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|es`);
-                
-                if (!response.ok) throw new Error('Translation failed');
-
-                const data = await response.json();
-
-                if (data && data.responseData && data.responseData.translatedText) {
-                    const translation = data.responseData.translatedText.toLowerCase();
-                    
-                    if (translation !== word.toLowerCase()) {
-                        localStorage.setItem(cacheKey, translation);
-                        return translation;
-                    }
+                // Usar datos simulados si Supabase no está disponible
+                if (!supabase) {
+                    console.warn('Using simulated data - Supabase not available');
+                    initSimulatedData();
+                } else {
+                    await renderSavedTexts();
+                    await updateStats();
+                    await renderWordInventory();
                 }
-
-                return '';
-            } catch (e) {
-                console.error('Translation error for:', word, e);
-                return '';
+                
+                // Event listeners
+                if (saveTextBtn) saveTextBtn.addEventListener('click', saveText);
+                if (closeTextViewer) closeTextViewer.addEventListener('click', closeText);
+                if (searchBtn) searchBtn.addEventListener('click', searchWords);
+                
+                // Practice events
+                if (generatePracticeBtn) generatePracticeBtn.addEventListener('click', generatePracticeList);
+                if (markAllKnown) markAllKnown.addEventListener('click', markAllPracticeWordsAsKnown);
+                if (shufflePractice) shufflePractice.addEventListener('click', shufflePracticeWords);
+                if (playPracticeLoop) playPracticeLoop.addEventListener('click', playAllPracticeWords);
+                
+                console.log('App initialized successfully');
+                
+            } catch (error) {
+                console.error('Error initializing app:', error);
             }
         }
 
-        // ✅ GENERACIÓN DE PRÁCTICA
-        async function generatePracticeList() {
-            const count = parseInt(wordCount.value) || 5;
-            currentPracticeWords = [];
+        function initSimulatedData() {
+            texts = [
+                {
+                    name: "Sample Text 1",
+                    content: "This is a sample English text for testing purposes. You can practice with these words and learn new vocabulary.",
+                    created_at: new Date().toISOString()
+                },
+                {
+                    name: "Sample Text 2", 
+                    content: "Learning English requires practice and patience. Every word you study helps improve your language skills.",
+                    created_at: new Date().toISOString()
+                }
+            ];
+            
+            // Inventario ampliado con verbos irregulares
+            wordInventory = {
+                // Palabras básicas
+                "sample": { status: "new" },
+                "english": { status: "known" },
+                "text": { status: "forgotten" },
+                "testing": { status: "new" },
+                "practice": { status: "new" },
+                "learning": { status: "new" },
+                "requires": { status: "forgotten" },
+                "patience": { status: "new" },
+                "every": { status: "new" },
+                "word": { status: "forgotten" },
+                "study": { status: "new" },
+                "helps": { status: "new" },
+                "improve": { status: "forgotten" },
+                "language": { status: "new" },
+                "skills": { status: "new" },
+                "vocabulary": { status: "new" },
+                "hello": { status: "new" },
+                "world": { status: "forgotten" },
+                "computer": { status: "new" },
+                "science": { status: "new" },
+                "technology": { status: "forgotten" },
+                "internet": { status: "new" },
+                "website": { status: "new" },
+                "application": { status: "forgotten" },
+                "program": { status: "new" },
+                
+                // Verbos irregulares para práctica
+                "awake": { status: "new" },
+                "be": { status: "forgotten" },
+                "bear": { status: "new" },
+                "beat": { status: "new" },
+                "become": { status: "forgotten" },
+                "bend": { status: "new" },
+                "blow": { status: "new" },
+                "bring": { status: "forgotten" },
+                "broadcast": { status: "new" },
+                "buy": { status: "new" },
+                "catch": { status: "forgotten" },
+                "choose": { status: "new" },
+                "come": { status: "new" },
+                "cut": { status: "forgotten" },
+                "dig": { status: "new" },
+                "do": { status: "new" },
+                "draw": { status: "forgotten" },
+                "drive": { status: "new" },
+                "drink": { status: "new" },
+                "eat": { status: "forgotten" },
+                "fall": { status: "new" },
+                "feed": { status: "new" },
+                "feel": { status: "forgotten" },
+                "fight": { status: "new" },
+                "find": { status: "new" },
+                "fly": { status: "forgotten" },
+                "forget": { status: "new" },
+                "forgive": { status: "new" },
+                "get": { status: "forgotten" },
+                "give": { status: "new" },
+                "grind": { status: "new" },
+                "go": { status: "forgotten" },
+                "have": { status: "new" },
+                "hear": { status: "new" },
+                "hide": { status: "forgotten" },
+                "hit": { status: "new" },
+                "hold": { status: "new" },
+                "keep": { status: "forgotten" },
+                "know": { status: "new" },
+                "lay": { status: "new" },
+                "learn": { status: "forgotten" },
+                "leave": { status: "new" },
+                "let": { status: "new" },
+                "lie": { status: "forgotten" },
+                "lose": { status: "new" },
+                "make": { status: "new" },
+                "mean": { status: "forgotten" },
+                "meet": { status: "new" },
+                "pay": { status: "new" },
+                "put": { status: "forgotten" },
+                "quit": { status: "new" },
+                "read": { status: "new" },
+                "run": { status: "forgotten" },
+                "say": { status: "new" },
+                "see": { status: "new" },
+                "seek": { status: "forgotten" },
+                "sell": { status: "new" },
+                "send": { status: "new" },
+                "shake": { status: "forgotten" },
+                "show": { status: "new" },
+                "sing": { status: "new" },
+                "sink": { status: "forgotten" },
+                "sit": { status: "new" },
+                "sleep": { status: "new" },
+                "slide": { status: "forgotten" },
+                "sow": { status: "new" },
+                "speak": { status: "new" },
+                "spend": { status: "forgotten" },
+                "spin": { status: "new" },
+                "stand": { status: "new" }
+            };
+            
+            renderSavedTexts();
+            updateStats();
+            renderWordInventory();
+        }
 
-            practiceWords.innerHTML = '<div class="practice-word-card loading-card"><i class="fas fa-spinner fa-spin mr-2"></i>Loading translations...</div>';
-            practiceList.classList.remove('hidden');
+        // ========== FUNCIONES DE TRADUCCIÓN ==========
+        async function translateWordToSpanish(word) {
+        if (!word || word.trim() === '') return { general: '' };
+
+            // Diccionario con múltiples significados para cada palabra
+            const multiMeaningDict = {
+                // Palabras con múltiples significados
+                'bear': {
+                    noun: 'oso / osa',
+                    verb: 'soportar / aguantar'
+                },
+                'bat': {
+                    noun: 'murciélago / bate',
+                    verb: 'batear / golpear'
+                },
+                'book': {
+                    noun: 'libro',
+                    verb: 'reservar / anotar'
+                },
+                'can': {
+                    noun: 'lata / bote',
+                    verb: 'poder / ser capaz'
+                },
+                'fire': {
+                    noun: 'fuego / incendio',
+                    verb: 'disparar / despedir'
+                },
+                'hand': {
+                    noun: 'mano',
+                    verb: 'entregar / pasar'
+                },
+                'head': {
+                    noun: 'cabeza',
+                    verb: 'dirigir / encabezar'
+                },
+                'light': {
+                    noun: 'luz / lámpara',
+                    verb: 'encender / iluminar'
+                },
+                'plant': {
+                    noun: 'planta',
+                    verb: 'plantar / sembrar'
+                },
+                'point': {
+                    noun: 'punto / punta',
+                    verb: 'señalar / apuntar'
+                },
+                'rock': {
+                    noun: 'roca / piedra',
+                    verb: 'mecer / balancear'
+                },
+                'run': {
+                    noun: 'carrera / corrida',
+                    verb: 'correr / funcionar'
+                },
+                'fly': {
+                    noun: 'mosca',
+                    verb: 'volar'
+                },
+                'watch': {
+                    noun: 'reloj',
+                    verb: 'mirar / observar'
+                },
+                'water': {
+                    noun: 'agua',
+                    verb: 'regar / dar agua'
+                },
+                'work': {
+                    noun: 'trabajo / obra',
+                    verb: 'trabajar / funcionar'
+                },
+                'play': {
+                    noun: 'juego / obra teatral',
+                    verb: 'jugar / tocar'
+                },
+                'rest': {
+                    noun: 'descanso / resto',
+                    verb: 'descansar / apoyar'
+                },
+                'park': {
+                    noun: 'parque',
+                    verb: 'aparcar / estacionar'
+                },
+                'fish': {
+                    noun: 'pez / pescado',
+                    verb: 'pescar'
+                },
+                'place': {
+                    noun: 'lugar / sitio',
+                    verb: 'colocar / poner'
+                },
+                'train': {
+                    noun: 'tren',
+                    verb: 'entrenar / formar'
+                },
+                'ship': {
+                    noun: 'barco / nave',
+                    verb: 'enviar / embarcar'
+                },
+                'picture': {
+                    noun: 'imagen / foto',
+                    verb: 'imaginar / representar'
+                },
+                'show': {
+                    noun: 'espectáculo / programa',
+                    verb: 'mostrar / enseñar'
+                },
+
+                // Palabras solo con un significado principal
+                'hello': { general: 'hola' },
+                'world': { general: 'mundo' },
+                'test': { general: 'prueba' },
+                'sample': { general: 'muestra' },
+                'english': { general: 'inglés' },
+                'text': { general: 'texto' },
+                'practice': { general: 'práctica' },
+                'word': { general: 'palabra' },
+                'testing': { general: 'probando' },
+                'learning': { general: 'aprendizaje' },
+                'patience': { general: 'paciencia' },
+                'every': { general: 'cada' },
+                'language': { general: 'idioma' },
+                'skills': { general: 'habilidades' },
+                'vocabulary': { general: 'vocabulario' },
+                'computer': { general: 'computadora' },
+                'science': { general: 'ciencia' },
+                'technology': { general: 'tecnología' },
+                'internet': { general: 'internet' },
+                'website': { general: 'sitio web' },
+                'application': { general: 'aplicación' },
+                'program': { general: 'programa' },
+                'this': { general: 'esto' },
+                'for': { general: 'para' },
+                'purposes': { general: 'propósitos' },
+                'you': { general: 'tú' },
+                'with': { general: 'con' },
+                'these': { general: 'estas' },
+                'words': { general: 'palabras' },
+                'and': { general: 'y' },
+                'new': { general: 'nuevo' },
+                'cat': { general: 'gato' },
+                'dog': { general: 'perro' },
+                'house': { general: 'casa' },
+                'car': { general: 'coche' },
+                'table': { general: 'mesa' },
+                'chair': { general: 'silla' },
+                'food': { general: 'comida' },
+                'money': { general: 'dinero' },
+                'time': { general: 'tiempo' },
+                'person': { general: 'persona' },
+                'family': { general: 'familia' },
+                'friend': { general: 'amigo' },
+                'school': { general: 'escuela' },
+                'love': { general: 'amor' },
+                'life': { general: 'vida' },
+                'health': { general: 'salud' },
+
+                // Verbos solo verbos
+                'be': { verb: 'ser / estar' },
+                'have': { verb: 'tener' },
+                'do': { verb: 'hacer' },
+                'say': { verb: 'decir' },
+                'get': { verb: 'obtener / conseguir' },
+                'make': { verb: 'hacer / crear' },
+                'go': { verb: 'ir' },
+                'know': { verb: 'saber / conocer' },
+                'take': { verb: 'tomar / llevar' },
+                'see': { verb: 'ver' },
+                'come': { verb: 'venir' },
+                'think': { verb: 'pensar' },
+                'look': { verb: 'mirar / buscar' },
+                'want': { verb: 'querer' },
+                'give': { verb: 'dar' },
+                'use': { verb: 'usar' },
+                'find': { verb: 'encontrar' },
+                'tell': { verb: 'decir / contar' },
+                'ask': { verb: 'preguntar' },
+                'seem': { verb: 'parecer' },
+                'feel': { verb: 'sentir' },
+                'try': { verb: 'intentar / probar' },
+                'leave': { verb: 'salir / dejar' },
+                'call': { verb: 'llamar' },
+                'read': { verb: 'leer' },
+                'write': { verb: 'escribir' },
+                'move': { verb: 'mover / mudarse' },
+                'live': { verb: 'vivir' },
+                'believe': { verb: 'creer' },
+                'bring': { verb: 'traer' },
+                'happen': { verb: 'pasar / ocurrir' },
+                'must': { verb: 'deber / tener que' },
+                'put': { verb: 'poner' },
+                'mean': { verb: 'significar' },
+                'become': { verb: 'convertirse / llegar a ser' },
+                'keep': { verb: 'mantener / guardar' },
+                'let': { verb: 'dejar / permitir' },
+                'begin': { verb: 'empezar / comenzar' },
+                'help': { verb: 'ayudar' },
+                'talk': { verb: 'hablar / conversar' },
+                'turn': { verb: 'girar / convertir' },
+                'start': { verb: 'empezar / arrancar' },
+                'might': { verb: 'poder / tal vez' },
+                'hear': { verb: 'oír / escuchar' },
+                'hold': { verb: 'sostener / celebrar' },
+                'provide': { verb: 'proporcionar' },
+                'sit': { verb: 'sentarse' },
+                'stand': { verb: 'estar de pie / soportar' },
+                'lose': { verb: 'perder' },
+                'pay': { verb: 'pagar' },
+                'meet': { verb: 'conocer / encontrarse' },
+                'include': { verb: 'incluir' },
+                'continue': { verb: 'continuar' },
+                'set': { verb: 'poner / establecer' },
+                'learn': { verb: 'aprender' },
+                'change': { verb: 'cambiar' },
+                'lead': { verb: 'liderar / conducir' },
+                'understand': { verb: 'entender' },
+                'follow': { verb: 'seguir' },
+                'stop': { verb: 'parar / detener' },
+                'create': { verb: 'crear' },
+                'speak': { verb: 'hablar' },
+                'spend': { verb: 'gastar / pasar tiempo' },
+                'grow': { verb: 'crecer / cultivar' },
+                'open': { verb: 'abrir' },
+                'walk': { verb: 'caminar' },
+                'win': { verb: 'ganar' },
+                'offer': { verb: 'ofrecer' },
+                'remember': { verb: 'recordar' },
+                'consider': { verb: 'considerar' },
+                'appear': { verb: 'aparecer / parecer' },
+                'buy': { verb: 'comprar' },
+                'wait': { verb: 'esperar' },
+                'serve': { verb: 'servir' },
+                'die': { verb: 'morir' },
+                'send': { verb: 'enviar' },
+                'expect': { verb: 'esperar' },
+                'build': { verb: 'construir' },
+                'stay': { verb: 'quedarse' },
+                'fall': { verb: 'caer' },
+                'cut': { verb: 'cortar' },
+                'reach': { verb: 'alcanzar' },
+                'kill': { verb: 'matar' },
+                'remain': { verb: 'permanecer' },
+                'awake': { verb: 'despertar' },
+                'beat': { verb: 'golpear / vencer' },
+                'bend': { verb: 'doblar / curvar' },
+                'blow': { verb: 'soplar' },
+                'broadcast': { verb: 'transmitir / difundir' },
+                'catch': { verb: 'atrapar / coger' },
+                'choose': { verb: 'elegir / escoger' },
+                'dig': { verb: 'cavar / excavar' },
+                'draw': { verb: 'dibujar / tirar' },
+                'drive': { verb: 'conducir / manejar' },
+                'drink': { verb: 'beber' },
+                'eat': { verb: 'comer' },
+                'feed': { verb: 'alimentar / dar de comer' },
+                'fight': { verb: 'luchar / pelear' },
+                'forget': { verb: 'olvidar' },
+                'forgive': { verb: 'perdonar' },
+                'grind': { verb: 'moler / triturar' },
+                'hide': { verb: 'esconder / ocultar' },
+                'hit': { verb: 'golpear / pegar' },
+                'lay': { verb: 'poner / colocar' },
+                'lie': { verb: 'mentir / acostarse' },
+                'quit': { verb: 'dejar / renunciar' },
+                'seek': { verb: 'buscar / procurar' },
+                'sell': { verb: 'vender' },
+                'shake': { verb: 'sacudir / temblar' },
+                'sing': { verb: 'cantar' },
+                'sink': { verb: 'hundir / sumergir' },
+                'sleep': { verb: 'dormir' },
+                'slide': { verb: 'deslizar / resbalar' },
+                'sow': { verb: 'sembrar' },
+                'spin': { verb: 'girar / hilar' }
+            };
+
+    // 1. Primero buscar en el diccionario local
+    const wordLower = word.toLowerCase();
+    const localResult = multiMeaningDict[wordLower];
+
+    if (localResult) {
+        console.log('Traducción encontrada en diccionario local');
+        return localResult;
+    }
+
+    // 2. Si no está en el diccionario local, usar LibreTranslate
+    console.log('Buscando en LibreTranslate:', word);
+    try {
+        const response = await fetch('https://libretranslate.de/translate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                q: word,
+                source: 'en',
+                target: 'es',
+                format: 'text'
+            })
+        });
+
+        if (!response.ok) throw new Error('Error en la respuesta');
+
+        const data = await response.json();
+
+        if (data && data.translatedText) {
+            // Guardar la nueva traducción en el diccionario local
+            multiMeaningDict[wordLower] = { general: data.translatedText };
+            console.log('Nueva traducción guardada:', word, '->', data.translatedText);
+            return { general: data.translatedText };
+        }
+    } catch (error) {
+        console.error('Error con LibreTranslate:', error);
+        // Si hay error, devolver la palabra original
+        return { general: word };
+    }
+
+    // Si todo falla, devolver la palabra original
+    return { general: word };
+}
+
+   function formatTranslation(meaningObj) {
+    let htmlResult = '';
+    let plainTextResult = '';
+
+    if (meaningObj.noun && meaningObj.verb) {
+        htmlResult = `<div class="text-sm"><strong>sust.</strong> ${meaningObj.noun}</div><div class="text-sm mt-1"><strong>verb.</strong> ${meaningObj.verb}</div>`;
+        plainTextResult = `Sustantivo: ${meaningObj.noun}. Verbo: ${meaningObj.verb}`;
+    } else if (meaningObj.noun) {
+        htmlResult = `<div class="text-sm"><strong>sust.</strong> ${meaningObj.noun}</div>`;
+        plainTextResult = `Sustantivo: ${meaningObj.noun}`;
+    } else if (meaningObj.verb) {
+        htmlResult = `<div class="text-sm"><strong>verb.</strong> ${meaningObj.verb}</div>`;
+        plainTextResult = `Verbo: ${meaningObj.verb}`;
+    } else if (meaningObj.general) {
+        htmlResult = `<div class="text-sm">${meaningObj.general}</div>`;
+        plainTextResult = meaningObj.general;
+    } else {
+        htmlResult = `<div class="text-sm">${Object.values(meaningObj)[0]}</div>`;
+        plainTextResult = Object.values(meaningObj)[0];
+    }
+
+    return {
+        html: htmlResult,
+        text: plainTextResult
+    };
+}
+
+// ========== FUNCIONES AUXILIARES ==========
+let learningMode = true; // Si está activo, guarda nuevas palabras automáticamente
+
+async function translateWithLibreTranslate(word) {
+    try {
+        const response = await fetch('https://libretranslate.de/translate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                q: word,
+                source: 'en',
+                target: 'es',
+                format: 'text'
+            }),
+            timeout: 5000 // Timeout de 5 segundos
+        });
+
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+        const data = await response.json();
+        return data.translatedText || word; // Devuelve la palabra original si no hay traducción
+
+    } catch (error) {
+        console.error('LibreTranslate error:', error);
+        return word; // Fallback a la palabra original
+    }
+}
+
+function addToLocalDictionary(word, translation) {
+    if (!learningMode) return;
+
+    const wordLower = word.toLowerCase();
+    // Evitar duplicados o sobreescrituras
+    if (!multiMeaningDict[wordLower]) {
+        multiMeaningDict[wordLower] = { general: translation };
+        console.log(`Nueva palabra aprendida: ${wordLower} -> ${translation}`);
+
+        // Opcional: Guardar en localStorage para persistencia
+        try {
+            localStorage.setItem('learnedWords', JSON.stringify(multiMeaningDict));
+        } catch (e) {
+            console.error('Error saving to localStorage:', e);
+        }
+    }
+}
+
+        // ========== FUNCIONES DE TEXTO ==========
+        async function saveText() {
+            const name = textNameInput.value.trim();
+            const content = textInput.value.trim();
+
+            if (!name || !content) {
+                alert('Please enter both a name and text content');
+                return;
+            }
+
+            console.log('Saving text:', name);
 
             try {
-                const { data: words, error } = await supabase
-                    .from('word_inventory')
-                    .select('word')
-                    .eq('user_name', currentUser)
-                    .neq('status', 'known')
-                    .limit(count * 2);
+                if (supabase) {
+                    // Usar Supabase
+                    const { data: existing, error: fetchError } = await supabase
+                        .from('texts')
+                        .select('id')
+                        .eq('user_name', currentUser)
+                        .eq('name', name)
+                        .limit(1)
+                        .maybeSingle();
 
-                if (error || !words || words.length === 0) {
-                    practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-gray-500 text-center">No words available for practice!</p></div>';
+                    if (fetchError) {
+                        console.error('Fetch error:', fetchError);
+                        return;
+                    }
+
+                    if (existing) {
+                        alert('A text with this name already exists');
+                        return;
+                    }
+
+                    const { error: insertError } = await supabase
+                        .from('texts')
+                        .insert({
+                            user_name: currentUser,
+                            name: name,
+                            content: content,
+                            created_at: new Date().toISOString()
+                        })
+                        .select();
+
+                    if (insertError) {
+                        console.error('Insert error:', insertError);
+                        return;
+                    }
+                } else {
+                    // Usar almacenamiento local
+                    const existingIndex = texts.findIndex(t => t.name === name);
+                    if (existingIndex !== -1) {
+                        alert('A text with this name already exists');
+                        return;
+                    }
+                    
+                    texts.push({
+                        name: name,
+                        content: content,
+                        created_at: new Date().toISOString()
+                    });
+                }
+
+                textNameInput.value = '';
+                textInput.value = '';
+
+                await Promise.all([
+                    renderSavedTexts(),
+                    updateStats(),
+                    extractWords(content)
+                ]);
+
+                console.log('Text saved successfully');
+
+            } catch (error) {
+                console.error('Error in save operation:', error);
+            }
+        }
+
+        async function renderSavedTexts() {
+            console.log('Rendering saved texts');
+            
+            try {
+                if (supabase) {
+                    const { data: userTexts, error } = await supabase
+                        .from('texts')
+                        .select('*')
+                        .eq('user_name', currentUser)
+                        .order('created_at', { ascending: false });
+
+                    if (error) {
+                        console.error('Error loading texts:', error);
+                        return;
+                    }
+                    texts = userTexts || [];
+                }
+
+                savedTextsList.innerHTML = '';
+
+                if (texts.length === 0) {
+                    savedTextsList.innerHTML = '<p class="text-gray-500 col-span-2 text-center py-4">No saved texts yet</p>';
+                    return;
+                }
+                    
+                texts.forEach(text => {
+                    const textCard = document.createElement('div');
+                    textCard.className = 'bg-gray-50 p-3 rounded-lg border border-gray-200 hover:border-indigo-300 transition cursor-pointer';
+                    textCard.innerHTML = `
+                        <h3 class="font-medium text-gray-800 truncate">${text.name}</h3>
+                        <p class="text-sm text-gray-500 mt-1">${new Date(text.created_at).toLocaleDateString()}</p>
+                        <div class="flex justify-end mt-2">
+                            <button class="text-indigo-600 hover:text-indigo-800 mr-2 view-text-btn" data-name="${text.name}">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="text-red-600 hover:text-red-800 delete-text-btn" data-name="${text.name}">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    `;
+                    savedTextsList.appendChild(textCard);
+                });
+                
+                document.querySelectorAll('.view-text-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        viewText(btn.getAttribute('data-name'));
+                    });
+                });
+                
+                document.querySelectorAll('.delete-text-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        deleteText(btn.getAttribute('data-name'));
+                    });
+                });
+                
+            } catch (error) {
+                console.error('Error rendering saved texts:', error);
+            }
+        }
+
+        async function viewText(name) {
+            console.log('Viewing text:', name);
+            
+            const text = texts.find(t => t.name === name);
+            if (!text) return;
+
+            selectedText = text;
+            currentTextTitle.textContent = text.name;
+
+            await loadWordInventory();
+
+            let processedContent = text.content;
+            const words = processedContent.split(/(\s+|[.,\/#!$%\^&\*;:{}=\-_`~()]+)/);
+
+            processedContent = words.map(word => {
+                if (/^\s+$/.test(word) || /^[.,\/#!$%\^&\*;:{}=\-_`~()]+$/.test(word)) {
+                    return word;
+                }
+
+                const cleanWord = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '').toLowerCase();
+                if (cleanWord.trim() === '') return word;
+
+                const status = wordInventory[cleanWord]?.status;
+
+                let wordClass = '';
+                if (status === 'known') wordClass = 'known';
+                if (status === 'forgotten') wordClass = 'forgotten';
+
+                return `<span class="word ${wordClass}" data-word="${cleanWord}">${word}<span class="word-actions" style="opacity: 1;">
+                    <button class="speech-btn" data-word="${cleanWord}" title="Pronunciar palabra">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <button class="mark-known-btn" data-word="${cleanWord}" title="Marcar como conocida">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button class="mark-forgotten-btn" data-word="${cleanWord}" title="Marcar como olvidada">
+                        <i class="fas fa-exclamation"></i>
+                    </button>
+                </span></span>`;
+            }).join('');
+
+            textDisplay.innerHTML = processedContent;
+
+            // Event listeners para los botones
+            document.querySelectorAll('.speech-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const word = btn.getAttribute('data-word');
+                    speakWord(word);
+                });
+            });
+
+            document.querySelectorAll('.mark-known-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    selectedWord = btn.getAttribute('data-word');
+                    markWordAndUpdate('known', btn);
+                });
+            });
+
+            document.querySelectorAll('.mark-forgotten-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    selectedWord = btn.getAttribute('data-word');
+                    markWordAndUpdate('forgotten', btn);
+                });
+            });
+
+            textViewerSection.classList.remove('hidden');
+        }
+
+        async function loadWordInventory() {
+            try {
+                if (supabase) {
+                    const { data, error } = await supabase
+                        .from('word_inventory')
+                        .select('word, status')
+                        .eq('user_name', currentUser);
+
+                    if (error) {
+                        console.error('Error loading word inventory:', error);
+                        return;
+                    }
+
+                    wordInventory = {};
+                    data.forEach(entry => {
+                        wordInventory[entry.word] = {
+                            status: entry.status
+                        };
+                    });
+                }
+            } catch (error) {
+                console.error('Error loading word inventory:', error);
+            }
+        }
+
+        function closeText() {
+            textViewerSection.classList.add('hidden');
+            selectedText = null;
+            selectedWord = null;
+            selectedRange = null;
+            translationResult.classList.add('hidden');
+        }
+
+        async function deleteText(name) {
+            if (confirm(`Are you sure you want to delete "${name}"?`)) {
+                try {
+                    if (supabase) {
+                        const { error } = await supabase
+                            .from('texts')
+                            .delete()
+                            .eq('user_name', currentUser)
+                            .eq('name', name);
+
+                        if (error) {
+                            console.error('Error deleting text:', error);
+                            return;
+                        }
+                    } else {
+                        const index = texts.findIndex(t => t.name === name);
+                        if (index !== -1) {
+                            texts.splice(index, 1);
+                        }
+                    }
+
+                    await renderSavedTexts();
+                    await updateStats();
+                    
+                    if (selectedText && selectedText.name === name) {
+                        closeText();
+                    }
+                    
+                    console.log('Text deleted successfully');
+                } catch (error) {
+                    console.error('Error deleting text:', error);
+                }
+            }
+        }
+
+        // ========== FUNCIONES DE PALABRAS ==========
+        async function markWordAndUpdate(status, buttonElement) {
+            if (!selectedWord) return;
+
+            await markWord(status);
+            
+            const wordSpan = buttonElement.closest('.word');
+            if (wordSpan) {
+                wordSpan.classList.remove('known', 'forgotten');
+                if (status === 'known') {
+                    wordSpan.classList.add('known');
+                } else if (status === 'forgotten') {
+                    wordSpan.classList.add('forgotten');
+                }
+            }
+        }
+
+        async function markWord(status) {
+            if (!selectedWord) return;
+
+            try {
+                if (supabase) {
+                    const { data: existingWord } = await supabase
+                        .from('word_inventory')
+                        .select('*')
+                        .eq('user_name', currentUser)
+                        .eq('word', selectedWord)
+                        .limit(1)
+                        .maybeSingle();
+
+                    if (existingWord) {
+                        await supabase
+                            .from('word_inventory')
+                            .update({
+                                status: status,
+                                count: existingWord.count + 1,
+                                last_updated: new Date().toISOString()
+                            })
+                            .eq('id', existingWord.id);
+                    } else {
+                        await supabase
+                            .from('word_inventory')
+                            .insert([{
+                                user_name: currentUser,
+                                word: selectedWord,
+                                status: status,
+                                count: 1,
+                                last_updated: new Date().toISOString()
+                            }]);
+                    }
+                } else {
+                    // Usar almacenamiento local
+                    wordInventory[selectedWord] = { status: status };
+                }
+
+                await Promise.all([
+                    renderWordInventory(),
+                    updateStats()
+                ]);
+
+            } catch (error) {
+                console.error('Error marking word:', error);
+            }
+        }
+
+    // Extraer palabras de un texto y actualizar el inventario
+    async function extractWords(text) {
+    // Extraer todas las palabras en minúsculas
+    const words = text.toLowerCase().match(/\b[\w']+\b/g) || [];
+
+    for (const word of words) {
+        // Limpiar signos de puntuación
+        const cleanWord = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+
+        if (supabase) {
+            // Verificar si la palabra ya existe para el usuario actual
+            const { data: existingWord } = await supabase
+                .from('word_inventory')
+                .select('id, count')
+                .eq('user_name', currentUser)
+                .eq('word', cleanWord)
+                .maybeSingle();
+
+            if (existingWord) {
+                // Si existe, aumentar el contador y actualizar fecha
+                await supabase
+                    .from('word_inventory')
+                    .update({
+                        count: existingWord.count + 1,
+                        last_updated: new Date().toISOString()
+                    })
+                    .eq('id', existingWord.id);
+            } else {
+                // Si no existe, crear un nuevo registro con estado "new"
+                await supabase
+                    .from('word_inventory')
+                    .insert([{
+                        user_name: currentUser,
+                        word: cleanWord,
+                        status: 'new',
+                        count: 1,
+                        last_updated: new Date().toISOString()
+                    }]);
+            }
+        } else {
+            // Si no se usa Supabase, actualizar inventario en memoria
+            if (!wordInventory[cleanWord]) {
+                wordInventory[cleanWord] = { status: 'new' };
+            }
+        }
+    }
+
+    // Actualizar interfaz después de procesar todas las palabras
+    await renderWordInventory();
+    await updateStats();
+}
+
+        // ========== FUNCIONES DE ESTADÍSTICAS ==========
+        async function updateStats() {
+            try {
+                let knownWords = 0, forgottenWords = 0, totalWords = 0, totalTexts = 0;
+
+                if (supabase) {
+                    const { count: known } = await supabase
+                        .from('word_inventory')
+                        .select('*', { count: 'exact' })
+                        .eq('user_name', currentUser)
+                        .eq('status', 'known');
+
+                    const { count: forgotten } = await supabase
+                        .from('word_inventory')
+                        .select('*', { count: 'exact' })
+                        .eq('user_name', currentUser)
+                        .eq('status', 'forgotten');
+
+                    const { count: total } = await supabase
+                        .from('word_inventory')
+                        .select('*', { count: 'exact' })
+                        .eq('user_name', currentUser);
+
+                    const { count: textsTotal } = await supabase
+                        .from('texts')
+                        .select('*', { count: 'exact' })
+                        .eq('user_name', currentUser);
+
+                    knownWords = known || 0;
+                    forgottenWords = forgotten || 0;
+                    totalWords = total || 0;
+                    totalTexts = textsTotal || 0;
+                } else {
+                    // Usar datos locales
+                    const words = Object.values(wordInventory);
+                    knownWords = words.filter(w => w.status === 'known').length;
+                    forgottenWords = words.filter(w => w.status === 'forgotten').length;
+                    totalWords = words.length;
+                    totalTexts = texts.length;
+                }
+
+                knownCount.textContent = knownWords;
+                forgottenCount.textContent = forgottenWords;
+                totalCount.textContent = totalWords;
+                textsCount.textContent = totalTexts;
+
+                const progress = totalWords > 0 ? Math.round((knownWords / totalWords) * 100) : 0;
+                progressBar.style.width = `${progress}%`;
+                progressPercentage.textContent = `${progress}%`;
+                
+            } catch (error) {
+                console.error('Error updating stats:', error);
+            }
+        }
+
+        async function renderWordInventory(filter = '') {
+            try {
+                let words = [];
+
+                if (supabase) {
+                    let query = supabase
+                        .from('word_inventory')
+                        .select('*')
+                        .eq('user_name', currentUser);
+
+                    if (filter) {
+                        query = query.ilike('word', `%${filter}%`);
+                    }
+
+                    const { data, error } = await query;
+
+                    if (error) {
+                        console.error('Error loading words:', error);
+                        return;
+                    }
+                    words = data || [];
+                } else {
+                    // Usar datos locales
+                    words = Object.entries(wordInventory)
+                        .filter(([word]) => !filter || word.includes(filter.toLowerCase()))
+                        .map(([word, data]) => ({ word, ...data }));
+                }
+
+                wordInventoryTable.innerHTML = '';
+
+                if (words.length === 0) {
+                    wordInventoryTable.innerHTML = `
+                        <tr>
+                            <td colspan="2" class="px-2 py-4 text-center text-gray-500">No words found</td>
+                        </tr>
+                    `;
                     return;
                 }
 
-                const shuffledWords = words.sort(() => 0.5 - Math.random());
-                
+                words.forEach(wordData => {
+                    const row = document.createElement('tr');
+
+                    let statusClass = '';
+                    let statusText = '';
+
+                    if (wordData.status === 'known') {
+                        statusClass = 'bg-green-100 text-green-800';
+                        statusText = 'Known';
+                    } else if (wordData.status === 'forgotten') {
+                        statusClass = 'bg-orange-100 text-orange-800';
+                        statusText = 'Forgotten';
+                    } else {
+                        statusClass = 'bg-gray-100 text-gray-800';
+                        statusText = 'New';
+                    }
+
+                    row.innerHTML = `
+                        <td class="px-2 py-2 whitespace-nowrap font-medium">${wordData.word}</td>
+                        <td class="px-2 py-2 whitespace-nowrap">
+                            <span class="px-2 py-1 text-xs rounded-full ${statusClass}">${statusText}</span>
+                        </td>
+                    `;
+
+                    wordInventoryTable.appendChild(row);
+                });
+
+            } catch (error) {
+                console.error('Error rendering word inventory:', error);
+            }
+        }
+
+        function searchWords() {
+            const query = searchWord.value.trim();
+            renderWordInventory(query);
+        }
+
+        // ========== FUNCIONES DE PRÁCTICA ==========
+        async function generatePracticeList() {
+    const count = parseInt(wordCount.value) || 5;
+    currentPracticeWords = [];
+
+    practiceWords.innerHTML = '<div class="practice-word-card loading-card"><i class="fas fa-spinner fa-spin mr-2"></i>Loading translations...</div>';
+    practiceList.classList.remove('hidden');
+
+    console.log('Generating practice list. Supabase available:', !!supabase);
+    console.log('Current word inventory:', wordInventory);
+
+    try {
+        let availableWords = [];
+
+        if (supabase) {
+            const { data: words, error } = await supabase
+                .from('word_inventory')
+                .select('word')
+                .eq('user_name', currentUser)
+                .neq('status', 'known')
+                .limit(count * 2);
+
+            if (error) {
+                console.error('Supabase error:', error);
+                throw error;
+            }
+
+            availableWords = words || [];
+            console.log('Words from Supabase:', availableWords);
+        } else {
+            // Usar datos locales
+            console.log('Using local word inventory');
+            availableWords = Object.entries(wordInventory)
+                .filter(([word, data]) => {
+                    console.log(`Word: ${word}, Status: ${data.status}`);
+                    return data.status !== 'known';
+                })
+                .slice(0, count * 2)
+                .map(([word]) => ({ word }));
+
+            console.log('Available words from local:', availableWords);
+        }
+
+        if (availableWords.length === 0) {
+            practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-gray-500 text-center">No words available for practice!</p></div>';
+            return;
+        }
+
+        const shuffledWords = availableWords.sort(() => 0.5 - Math.random());
+        console.log('Shuffled words:', shuffledWords);
+
+        for (const wordObj of shuffledWords) {
+            if (currentPracticeWords.length >= count) break;
+
+            const word = wordObj.word;
+            const translationObj = await translateWordToSpanish(word);
+            const formattedTranslation = formatTranslation(translationObj);
+
+            console.log(`Word: ${word}, Translation: ${formattedTranslation.text}`);
+
+            if (formattedTranslation.text) {
+                currentPracticeWords.push({
+                    word,
+                    translation: formattedTranslation.html,
+                    plainTranslation: formattedTranslation.text
+                });
+            }
+        }
+
+        console.log('Final practice words:', currentPracticeWords);
+        renderPracticeWords();
+
+    } catch (error) {
+        console.error('Error generating practice list:', error);
+        practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-red-500 text-center">Error loading practice words</p></div>';
+    }
+}
+
+        // ========== FUNCIONES DE PRÁCTICA ==========
+        async function generateVerbPracticeList() {
+            const count = parseInt(wordCount.value) || 5;
+            currentPracticeWords = [];
+
+            practiceWords.innerHTML = '<div class="practice-word-card loading-card"><i class="fas fa-spinner fa-spin mr-2"></i>Loading verb translations...</div>';
+            practiceList.classList.remove('hidden');
+
+            console.log('Generating verb practice list');
+
+            try {
+                let availableWords = [];
+
+                if (supabase) {
+                    const { data: words, error } = await supabase
+                        .from('word_inventory')
+                        .select('word')
+                        .eq('user_name', currentUser)
+                        .neq('status', 'known')
+                        .limit(count * 3);
+
+                    if (error) {
+                        console.error('Supabase error:', error);
+                        throw error;
+                    }
+
+                    availableWords = words || [];
+                } else {
+                    // Usar datos locales
+                    availableWords = Object.entries(wordInventory)
+                        .filter(([word, data]) => data.status !== 'known')
+                        .slice(0, count * 3)
+                        .map(([word]) => ({ word }));
+                }
+
+                if (availableWords.length === 0) {
+                    practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-gray-500 text-center">No words available for verb practice!</p></div>';
+                    return;
+                }
+
+                const shuffledWords = availableWords.sort(() => 0.5 - Math.random());
+
                 for (const wordObj of shuffledWords) {
                     if (currentPracticeWords.length >= count) break;
-                    
+
                     const word = wordObj.word;
-                    const translation = await translateWordToSpanish(word);
-                    
+                    const translation = await translateWordToSpanish(word, true);
+
                     if (translation && translation !== word.toLowerCase()) {
                         currentPracticeWords.push({ word, translation });
                     }
@@ -556,62 +1711,63 @@
                 renderPracticeWords();
 
             } catch (error) {
-                console.error('Error generating practice list:', error);
-                practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-red-500 text-center">Error loading practice words</p></div>';
+                console.error('Error generating verb practice list:', error);
+                practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-red-500 text-center">Error loading verb practice words</p></div>';
             }
         }
 
-        function renderPracticeWords() {
-            practiceWords.innerHTML = '';
+function renderPracticeWords() {
+    practiceWords.innerHTML = '';
 
-            if (currentPracticeWords.length === 0) {
-                practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-gray-500 text-center">No words with valid translations found</p></div>';
-                return;
-            }
+    if (currentPracticeWords.length === 0) {
+        practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-gray-500 text-center">No words with valid translations found</p></div>';
+        return;
+    }
 
-            currentPracticeWords.forEach(({ word, translation }, index) => {
-                const wordCard = document.createElement('div');
-                wordCard.className = 'practice-word-card';
-                wordCard.innerHTML = `
-                    <div class="word-original">${word}</div>
-                    <div class="word-translation">${translation}</div>
-                    <div class="practice-card-actions">
-                        <button class="speak-practice-btn" data-word="${word}" title="Pronunciar">
-                            <i class="fas fa-volume-up"></i>
-                        </button>
-                        <button class="mark-practice-known-btn" data-word="${word}" data-index="${index}" title="Marcar como conocido">
-                            <i class="fas fa-check"></i>
-                        </button>
-                    </div>
-                `;
-                practiceWords.appendChild(wordCard);
-            });
+    currentPracticeWords.forEach(({ word, translation }, index) => {
+        const wordCard = document.createElement('div');
+        wordCard.className = 'practice-word-card';
+        wordCard.innerHTML = `
+            <div class="word-original">${word}</div>
+            <div class="word-translation">${translation}</div>
+            <div class="practice-card-actions">
+                <button class="speak-practice-btn" data-word="${word}" title="Pronunciar">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="mark-practice-known-btn" data-word="${word}" data-index="${index}" title="Marcar como conocido">
+                    <i class="fas fa-check"></i>
+                </button>
+            </div>
+        `;
+        practiceWords.appendChild(wordCard);
+    });
 
-            document.querySelectorAll('.speak-practice-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    const word = btn.getAttribute('data-word');
-                    speakWord(word);
-                });
-            });
+    // Event listeners para practice cards
+    document.querySelectorAll('.speak-practice-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const word = btn.getAttribute('data-word');
+            speakWord(word);
+        });
+    });
 
-            document.querySelectorAll('.mark-practice-known-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    const word = btn.getAttribute('data-word');
-                    const index = parseInt(btn.getAttribute('data-index'));
-                    markPracticeWordAsKnown(word, index);
-                });
-            });
-        }
+    document.querySelectorAll('.mark-practice-known-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const word = btn.getAttribute('data-word');
+            const index = parseInt(btn.getAttribute('data-index'));
+            markPracticeWordAsKnown(word, index);
+        });
+    });
+}
 
         async function markPracticeWordAsKnown(word, index) {
             selectedWord = word;
             await markWord('known');
-            
+
             currentPracticeWords.splice(index, 1);
             renderPracticeWords();
-            
+
             if (currentPracticeWords.length === 0) {
                 practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-green-500 text-center font-semibold"><i class="fas fa-trophy mr-2"></i>All practice words completed!</p></div>';
             }
@@ -619,53 +1775,55 @@
 
         async function markAllPracticeWordsAsKnown() {
             if (currentPracticeWords.length === 0) return;
-            
+
             for (const { word } of currentPracticeWords) {
                 selectedWord = word;
                 await markWord('known');
             }
-            
+
             currentPracticeWords = [];
             practiceWords.innerHTML = '<div class="practice-word-card"><p class="text-green-500 text-center font-semibold"><i class="fas fa-trophy mr-2"></i>All words marked as known!</p></div>';
         }
 
         function shufflePracticeWords() {
             if (currentPracticeWords.length === 0) return;
-            
+
             currentPracticeWords.sort(() => 0.5 - Math.random());
             renderPracticeWords();
         }
 
-        async function playAllPracticeWords() {
-            if (currentPracticeWords.length === 0) {
-                alert('No practice words available!');
-                return;
-            }
+async function playAllPracticeWords() {
+    if (currentPracticeWords.length === 0) {
+        alert('No practice words available!');
+        return;
+    }
 
-            playPracticeLoop.disabled = true;
-            playPracticeLoop.innerHTML = '<i class="fas fa-spinner fa-spin mr-1"></i> Playing...';
+    playPracticeLoop.disabled = true;
+    playPracticeLoop.innerHTML = '<i class="fas fa-spinner fa-spin mr-1"></i> Playing...';
 
-            try {
-                for (let i = 0; i < currentPracticeWords.length; i++) {
-                    const { word, translation } = currentPracticeWords[i];
-                    
-                    highlightCurrentPracticeWord(i);
-                    
-                    await speakWordAsync(word, 'en-US');
-                    await delay(500);
-                    
-                    await speakWordAsync(translation, 'es-ES');
-                    await delay(1000);
-                    
-                    removeHighlightFromPracticeWord(i);
-                }
-            } catch (error) {
-                console.error('Error playing practice words:', error);
-            } finally {
-                playPracticeLoop.disabled = false;
-                playPracticeLoop.innerHTML = '<i class="fas fa-play-circle mr-1"></i> Listen All';
-            }
+    try {
+        for (let i = 0; i < currentPracticeWords.length; i++) {
+            const { word, plainTranslation } = currentPracticeWords[i];
+
+            highlightCurrentPracticeWord(i);
+
+            // Pronunciar palabra en inglés
+            await speakWordAsync(word, 'en-US');
+            await delay(500);
+
+            // Pronunciar traducción en español (usando plainTranslation)
+            await speakWordAsync(plainTranslation, 'es-ES');
+            await delay(1000);
+
+            removeHighlightFromPracticeWord(i);
         }
+    } catch (error) {
+        console.error('Error playing practice words:', error);
+    } finally {
+        playPracticeLoop.disabled = false;
+        playPracticeLoop.innerHTML = '<i class="fas fa-play-circle mr-1"></i> Listen All';
+    }
+}
 
         function highlightCurrentPracticeWord(index) {
             const cards = document.querySelectorAll('.practice-word-card');
@@ -683,29 +1841,7 @@
             }
         }
 
-        function speakWordAsync(text, lang = 'en-US') {
-            return new Promise((resolve) => {
-                if (!('speechSynthesis' in window)) {
-                    console.warn('Speech synthesis not supported');
-                    resolve();
-                    return;
-                }
-
-                const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = lang;
-                utterance.rate = 0.8;
-                
-                utterance.onend = () => resolve();
-                utterance.onerror = () => resolve();
-                
-                window.speechSynthesis.speak(utterance);
-            });
-        }
-
-        function delay(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
-
+        // ========== FUNCIONES DE AUDIO ==========
         function speakWord(word, lang = 'en-US') {
             if ('speechSynthesis' in window) {
                 const utterance = new SpeechSynthesisUtterance(word);
@@ -717,450 +1853,40 @@
             }
         }
 
-        // ========== FUNCIONES DE GESTIÓN DE TEXTO ==========
-        async function saveText() {
-            const name = textNameInput.value.trim();
-            const content = textInput.value.trim();
-
-            if (!name || !content) {
-                alert('Please enter both a name and text content');
-                return;
-            }
-
-            try {
-                const { data: existing, error: fetchError } = await supabase
-                    .from('texts')
-                    .select('id')
-                    .eq('user_name', currentUser)
-                    .eq('name', name)
-                    .limit(1)
-                    .maybeSingle();
-
-                if (fetchError) {
-                    console.error('Fetch error:', fetchError);
+        function speakWordAsync(text, lang = 'en-US') {
+            return new Promise((resolve) => {
+                if (!('speechSynthesis' in window)) {
+                    console.warn('Speech synthesis not supported');
+                    resolve();
                     return;
                 }
 
-                if (existing) {
-                    alert('A text with this name already exists');
-                    return;
-                }
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = lang;
+                utterance.rate = 0.8;
 
-                const { error: insertError } = await supabase
-                    .from('texts')
-                    .insert({
-                        user_name: currentUser,
-                        name: name,
-                        content: content,
-                        created_at: new Date().toISOString()
-                    })
-                    .select();
+                utterance.onend = () => resolve();
+                utterance.onerror = () => resolve();
 
-                if (insertError) {
-                    console.error('Insert error:', insertError);
-                    return;
-                }
-
-                textNameInput.value = '';
-                textInput.value = '';
-
-                await Promise.all([
-                    renderSavedTexts(),
-                    updateStats(),
-                    extractWords(content)
-                ]);
-
-            } catch (error) {
-                console.error('Error in save operation:', error);
-            }
-        }
-
-        async function renderSavedTexts() {
-            const { data: userTexts, error } = await supabase
-                .from('texts')
-                .select('*')
-                .eq('user_name', currentUser)
-                .order('created_at', { ascending: false });
-
-            if (error) {
-                console.error('Error loading texts:', error);
-                return;
-            }
-
-            texts = userTexts || [];
-            savedTextsList.innerHTML = '';
-
-            if (texts.length === 0) {
-                savedTextsList.innerHTML = '<p class="text-gray-500 col-span-2 text-center py-4">No saved texts yet</p>';
-                return;
-            }
-                
-            texts.forEach(text => {
-                const textCard = document.createElement('div');
-                textCard.className = 'bg-gray-50 p-3 rounded-lg border border-gray-200 hover:border-indigo-300 transition cursor-pointer';
-                textCard.innerHTML = `
-                    <h3 class="font-medium text-gray-800 truncate">${text.name}</h3>
-                    <p class="text-sm text-gray-500 mt-1">${new Date(text.created_at).toLocaleDateString()}</p>
-                    <div class="flex justify-end mt-2">
-                        <button class="text-indigo-600 hover:text-indigo-800 mr-2 view-text-btn" data-name="${text.name}">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                        <button class="text-red-600 hover:text-red-800 delete-text-btn" data-name="${text.name}">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                    </div>
-                `;
-                savedTextsList.appendChild(textCard);
-            });
-            
-            document.querySelectorAll('.view-text-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    viewText(btn.getAttribute('data-name'));
-                });
-            });
-            
-            document.querySelectorAll('.delete-text-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    deleteText(btn.getAttribute('data-name'));
-                });
+                window.speechSynthesis.speak(utterance);
             });
         }
 
-        async function loadWordInventory() {
-            try {
-                const { data, error } = await supabase
-                    .from('word_inventory')
-                    .select('word, status')
-                    .eq('user_name', currentUser);
-
-                if (error) {
-                    console.error('Error loading word inventory:', error);
-                    return;
-                }
-
-                wordInventory = {};
-                data.forEach(entry => {
-                    wordInventory[entry.word] = {
-                        status: entry.status
-                    };
-                });
-            } catch (e) {
-                console.error('Unexpected error loading word inventory:', e);
-            }
-        }
-
-// ✅ FUNCIÓN MEJORADA PARA VER TEXTO CON BOTONES INDIVIDUALES
-async function viewText(name) {
-    const text = texts.find(t => t.name === name);
-    if (!text) return;
-
-    selectedText = text;
-    currentTextTitle.textContent = text.name;
-
-    await loadWordInventory();
-
-    let processedContent = text.content;
-    // Dividir por palabras pero conservar espacios y puntuación
-    const words = processedContent.split(/(\s+|[.,\/#!$%\^&\*;:{}=\-_`~()]+)/);
-
-    processedContent = words.map(word => {
-        // Si es solo espacio o puntuación, devolverlo tal como está
-        if (/^\s+$/.test(word) || /^[.,\/#!$%\^&\*;:{}=\-_`~()]+$/.test(word)) {
-            return word;
-        }
-
-        // Si la palabra está vacía después de limpiar, devolverla tal como está
-        const cleanWord = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '').toLowerCase();
-        if (cleanWord.trim() === '') return word;
-
-        const status = wordInventory[cleanWord]?.status;
-
-        let wordClass = '';
-        if (status === 'known') wordClass = 'known';
-        if (status === 'forgotten') wordClass = 'forgotten';
-
-        // ✅ BOTONES INDIVIDUALES SIEMPRE VISIBLES PARA MÓVIL
-        return `<span class="word ${wordClass}" data-word="${cleanWord}">${word}<span class="word-actions" style="opacity: 1;">
-            <button class="speech-btn" data-word="${cleanWord}" title="Pronunciar palabra">
-                <i class="fas fa-volume-up"></i>
-            </button>
-            <button class="mark-known-btn" data-word="${cleanWord}" title="Marcar como conocida">
-                <i class="fas fa-check"></i>
-            </button>
-            <button class="mark-forgotten-btn" data-word="${cleanWord}" title="Marcar como olvidada">
-                <i class="fas fa-exclamation"></i>
-            </button>
-        </span></span>`;
-    }).join('');
-
-    textDisplay.innerHTML = processedContent;
-
-    // ✅ EVENTOS PARA LOS BOTONES INDIVIDUALES
-    document.querySelectorAll('.speech-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const word = btn.getAttribute('data-word');
-            speakWord(word);
-        });
-    });
-
-    document.querySelectorAll('.mark-known-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            selectedWord = btn.getAttribute('data-word');
-            markWordAndUpdate('known', btn);
-        });
-    });
-
-    document.querySelectorAll('.mark-forgotten-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            selectedWord = btn.getAttribute('data-word');
-            markWordAndUpdate('forgotten', btn);
-        });
-    });
-
-    textViewerSection.classList.remove('hidden');
-}
-
-        // ✅ FUNCIÓN PARA MARCAR PALABRA Y ACTUALIZAR VISUALMENTE
-        async function markWordAndUpdate(status, buttonElement) {
-            if (!selectedWord) return;
-
-            await markWord(status);
-            
-            // Actualizar visualmente la palabra inmediatamente
-            const wordSpan = buttonElement.closest('.word');
-            if (wordSpan) {
-                wordSpan.classList.remove('known', 'forgotten');
-                if (status === 'known') {
-                    wordSpan.classList.add('known');
-                } else if (status === 'forgotten') {
-                    wordSpan.classList.add('forgotten');
-                }
-            }
-        }
-
-        function closeText() {
-            textViewerSection.classList.add('hidden');
-            selectedText = null;
-            selectedWord = null;
-            selectedRange = null;
-            translationResult.classList.add('hidden');
-        }
-
-        async function deleteText(name) {
-            if (confirm(`Are you sure you want to delete "${name}"?`)) {
-                const { error } = await supabase
-                    .from('texts')
-                    .delete()
-                    .eq('user_name', currentUser)
-                    .eq('name', name);
-
-                if (error) {
-                    console.error('Error deleting text:', error);
-                    return;
-                }
-
-                texts = texts.filter(text => text.name !== name);
-                renderSavedTexts();
-                updateStats();
-                
-                if (selectedText && selectedText.name === name) {
-                    closeText();
-                }
-            }
-        }
-
-        async function markWord(status) {
-            if (!selectedWord) return;
-
-            try {
-                const { data: existingWord } = await supabase
-                    .from('word_inventory')
-                    .select('*')
-                    .eq('user_name', currentUser)
-                    .eq('word', selectedWord)
-                    .limit(1)
-                    .maybeSingle();
-
-                if (existingWord) {
-                    await supabase
-                        .from('word_inventory')
-                        .update({
-                            status: status,
-                            count: existingWord.count + 1,
-                            last_updated: new Date().toISOString()
-                        })
-                        .eq('id', existingWord.id);
-                } else {
-                    await supabase
-                        .from('word_inventory')
-                        .insert([{
-                            user_name: currentUser,
-                            word: selectedWord,
-                            status: status,
-                            count: 1,
-                            last_updated: new Date().toISOString()
-                        }]);
-                }
-
-                // Actualizar inventario local
-                wordInventory[selectedWord] = { status: status };
-
-                await Promise.all([
-                    renderWordInventory(),
-                    updateStats()
-                ]);
-
-            } catch (error) {
-                console.error('Error marking word:', error);
-            }
-        }
-
-        async function extractWords(text) {
-            const words = text.toLowerCase().match(/\b[\w']+\b/g) || [];
-
-            for (const word of words) {
-                const cleanWord = word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
-
-                const { data: existingWord } = await supabase
-                    .from('word_inventory')
-                    .select('id, count')
-                    .eq('user_name', currentUser)
-                    .eq('word', cleanWord)
-                    .single();
-
-                if (existingWord) {
-                    await supabase
-                        .from('word_inventory')
-                        .update({
-                            count: existingWord.count + 1,
-                            last_updated: new Date().toISOString()
-                        })
-                        .eq('id', existingWord.id);
-                } else {
-                    await supabase
-                        .from('word_inventory')
-                        .insert([{
-                            user_name: currentUser,
-                            word: cleanWord,
-                            status: 'new',
-                            count: 1,
-                            last_updated: new Date().toISOString()
-                        }]);
-                }
-            }
-
-            await renderWordInventory();
-            await updateStats();
-        }
-
-        async function updateStats() {
-            const { count: knownWords } = await supabase
-                .from('word_inventory')
-                .select('*', { count: 'exact' })
-                .eq('user_name', currentUser)
-                .eq('status', 'known');
-
-            const { count: forgottenWords } = await supabase
-                .from('word_inventory')
-                .select('*', { count: 'exact' })
-                .eq('user_name', currentUser)
-                .eq('status', 'forgotten');
-
-            const { count: totalWords } = await supabase
-                .from('word_inventory')
-                .select('*', { count: 'exact' })
-                .eq('user_name', currentUser);
-
-            const { count: totalTexts } = await supabase
-                .from('texts')
-                .select('*', { count: 'exact' })
-                .eq('user_name', currentUser);
-
-            knownCount.textContent = knownWords || 0;
-            forgottenCount.textContent = forgottenWords || 0;
-            totalCount.textContent = totalWords || 0;
-            textsCount.textContent = totalTexts || 0;
-
-            const progress = totalWords > 0 ? Math.round((knownWords / totalWords) * 100) : 0;
-            progressBar.style.width = `${progress}%`;
-            progressPercentage.textContent = `${progress}%`;
-        }
-
-        async function renderWordInventory(filter = '') {
-            let query = supabase
-                .from('word_inventory')
-                .select('*')
-                .eq('user_name', currentUser);
-
-            if (filter) {
-                query = query.ilike('word', `%${filter}%`);
-            }
-
-            const { data: words, error } = await query;
-
-            if (error) {
-                console.error('Error loading words:', error);
-                return;
-            }
-
-            wordInventoryTable.innerHTML = '';
-
-            if (!words || words.length === 0) {
-                wordInventoryTable.innerHTML = `
-                    <tr>
-                        <td colspan="2" class="px-2 py-4 text-center text-gray-500">No words found</td>
-                    </tr>
-                `;
-                return;
-            }
-
-            words.sort((a, b) => new Date(b.last_updated) - new Date(a.last_updated));
-
-            words.forEach(wordData => {
-                const row = document.createElement('tr');
-
-                let statusClass = '';
-                let statusText = '';
-
-                if (wordData.status === 'known') {
-                    statusClass = 'bg-green-100 text-green-800';
-                    statusText = 'Known';
-                } else if (wordData.status === 'forgotten') {
-                    statusClass = 'bg-orange-100 text-orange-800';
-                    statusText = 'Forgotten';
-                } else {
-                    statusClass = 'bg-gray-100 text-gray-800';
-                    statusText = 'New';
-                }
-
-                row.innerHTML = `
-                    <td class="px-2 py-2 whitespace-nowrap font-medium">${wordData.word}</td>
-                    <td class="px-2 py-2 whitespace-nowrap">
-                        <span class="px-2 py-1 text-xs rounded-full ${statusClass}">${statusText}</span>
-                    </td>
-                `;
-
-                wordInventoryTable.appendChild(row);
-            });
-        }
-
-        function searchWords() {
-            const query = searchWord.value.trim();
-            renderWordInventory(query);
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
         }
 
         // ========== INICIALIZACIÓN FINAL ==========
         document.addEventListener('DOMContentLoaded', function() {
-            if (appContainer) appContainer.style.display = 'none';
+            console.log('DOM loaded, initializing application...');
+
+            initializeDOMElements();
+
+            if (mainApp) mainApp.style.display = 'none';
             if (loginContainer) loginContainer.style.display = 'flex';
-            
+
             initLogin();
-            
+
             console.log("Aplicación inicializada correctamente");
         });
     </script>
